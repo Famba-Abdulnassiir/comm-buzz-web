@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "jobs",
+  "info": {
+    "singularName": "job",
+    "pluralName": "jobs",
+    "displayName": "Job",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "job_title": {
+      "type": "string"
+    },
+    "job_location": {
+      "type": "string"
+    },
+    "job_nature": {
+      "type": "string"
+    },
+    "job_salary": {
+      "type": "string"
+    },
+    "job_mini_desc": {
+      "type": "text"
+    },
+    "job_full_desc": {
+      "type": "richtext"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "job_link": {
+      "type": "string"
+    }
+  }
+}
