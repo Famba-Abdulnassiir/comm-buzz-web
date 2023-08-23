@@ -29,3 +29,6 @@ services:
       - key: TRANSFER_TOKEN_SALT
         generateValue: true
 
+databases:
+  - name: strapi
+    plan: starter
